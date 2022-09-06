@@ -1,0 +1,150 @@
+@font-face {
+  font-family: myThirdFont;
+  src: url("../fonts/scripttype.ttf");
+}
+
+section {
+  position: relative;
+  border: 1px solid #eeeeaa;
+}
+
+nav#breadCrumbs {
+  position: absolute;
+  top: 8%;
+  left: 0%;
+  height: 35px;
+  width: auto;
+  padding: 5px 30px;
+  background: linear-gradient(
+    to bottom,
+    rgba(60, 0, 0, 1),
+    rgba(50, 0, 0, 0.8)
+  );
+  border-top-right-radius: 24px;
+  z-index: 800;
+}
+
+nav#breadCrumbs a {
+  font-family: LuzSans, sans-serif;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 1s;
+  font-weight: 500;
+}
+
+nav#breadCrumbs a:hover {
+  color: #fdcaa4;
+}
+
+nav#breadCrumbs span {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: green;
+  position: absolute;
+  top: 0px;
+  right: -2px;
+  background: linear-gradient(
+    to bottom,
+    rgba(200, 200, 140, 1),
+    rgba(180, 180, 140, 0.8)
+  );
+  border-top-right-radius: 43px;
+  border-bottom-left-radius: 20px;
+}
+
+article p {
+  font-size: 1.15em;
+  margin-top: 2%;
+  margin-bottom: 2.5%;
+  text-align: justify;
+  text-indent: 45px;
+  font-weight: 300;
+}
+
+.signature-div {
+  position: relative;
+}
+
+p#signature {
+  width: 100%;
+  font-family: myThirdFont;
+  font-size: 3.5em;
+  color: #330000;
+  text-align: right;
+}
+
+p#founderTitle {
+  width: auto;
+  color: #330000;
+  text-align: right;
+}
+
+aside {
+  height: 400px;
+  background: linear-gradient(
+    to bottom,
+    rgba(76, 0, 0, 0.6),
+    rgba(80, 0, 0, 0.6)
+  );
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 2px;
+}
+
+aside div#asideDiv {
+  display: block;
+  width: 120px;
+  height: 100px;
+  position: absolute;
+  top: -45px;
+  left: -75px;
+  transform: rotate(130deg);
+}
+
+aside div#asideDiv span.bite {
+  display: inline-block;
+  width: 30px;
+  height: 50px;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-color: #eeeeaa;
+  border-radius: 24px;
+}
+
+aside div#asideDiv span#asideSBite {
+  transform: rotate(10deg);
+  transform: translateX(0px);
+}
+
+aside div#asideDiv span#asideFBite {
+  transform: rotate(-4deg);
+  transform: translateX(5px);
+}
+
+aside div#asideDiv span#asideTBite {
+  transform: translateX(-5px);
+}
+
+@media screen and (max-width: 768px) {
+  aside {
+    display: none;
+  }
+}
+
+article ol li {
+  margin-left: 30px;
+  padding-left: 30px;
+  margin-bottom: 40px;
+}
+
+article ol li p {
+  text-indent: 0px;
+}
+
+#home-slider p {
+  text-indent: 0px;
+  color: #fff;
+  z-index: 200;
+  font-size: 18px;
+}
